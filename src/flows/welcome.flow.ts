@@ -10,19 +10,19 @@ export const welcomeFlow = addKeyword(["hola", "hello", "buenos días"])
     const list = {
       header: {
         type: "text",
-        text: "🌟 Available Options",
+        text: "🌟 Opciones",
       },
       body: {
-        text: "Please select one of the following options:",
+        text: "Selecciona una opcion:",
       },
       footer: {
-        text: "We are here to assist you.",
+        text: "Estoy para ayudarte.",
       },
       action: {
-        button: "Choose an option",
+        button: "Seleccionar",
         sections: [
           {
-            title: "Social Media",
+            title: "Redes Sociales",
             rows: [
               {
                 id: "open_youtube",
@@ -37,7 +37,7 @@ export const welcomeFlow = addKeyword(["hola", "hello", "buenos días"])
             ],
           },
           {
-            title: "Actions",
+            title: "Acciones",
             rows: [
               {
                 id: "register",

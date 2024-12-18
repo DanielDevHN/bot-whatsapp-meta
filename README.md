@@ -11,9 +11,7 @@ This project is a WhatsApp chatbot built using the **BuilderBot** library and in
 - [Installation](#installation)
 - [Environment Configuration](#environment-configuration)
 - [Running the Project](#running-the-project)
-- [How It Works](#how-it-works)
 - [Dependencies](#dependencies)
-- [Testing Webhooks](#testing-webhooks)
 - [Autor](#autor)
 - [Credits](#credits)
 
@@ -48,7 +46,6 @@ Follow these steps to set up the project:
 
 Create a ```.env``` file in the root directory and add the following environment variables:
 
-## Chatwoot Configuration
 ```JWT_TOKEN=your_jwt_token```
 
 ```MUMBER_ID=number_id```
@@ -65,15 +62,6 @@ To start the chatbot server, run the following command:
 ```npm run dev```
 
 The bot server will start at ```http://localhost:3002```
-
-## How It Works
-
-When a user sends a message to your WhatsApp number:
-
-1. **The bot intercepts the message**.
-- Automatically creates or finds the corresponding inbox, contact, and conversation in Chatwoot.
-- Logs the incoming message in the Chatwoot dashboard.
-- When an agent replies to the conversation from Chatwoot:
 
 ## Dependencies
 

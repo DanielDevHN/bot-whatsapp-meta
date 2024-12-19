@@ -13,8 +13,11 @@
   "keywords": [],
   "dependencies": {
     "@builderbot/bot": "1.2.2",
+    "@builderbot/database-mongo": "^1.2.2",
+    "@builderbot/database-postgres": "^1.2.2",
     "@builderbot/provider-meta": "1.2.2",
-    "dotenv": "^16.4.7"
+    "dotenv": "^16.4.7",
+    "mongodb": "^6.12.0"
   },
   "devDependencies": {
     "@types/node": "^20.11.30",

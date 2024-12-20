@@ -12,15 +12,11 @@ const main = async () => {
     try {
         const db = await connectToMongoDB();
 
-        // const testFlow =  addKeyword(['hola']).addAnswer('Hola, soy un bot dinámico');
         const dynamicFlowArray = await loadDynamicFlow(db);
-        //console.log("🚀 Flujos dinámicos listos para el bot:", dynamicFlowArray.map(flow => flow.toJson()));
 
         const dynamicFlows = createFlow(dynamicFlowArray);
         
         const adapterProvider = provider;
-
-        //const adapterDB = new MemoryDB()
     
         const { handleCtx, httpServer } = await createBot({
             flow: dynamicFlows,

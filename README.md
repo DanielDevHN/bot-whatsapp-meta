@@ -70,10 +70,8 @@ The following libraries and tools are used in this project:
 | **Package**                         | **Version** | **Description**                                     |
 |-------------------------------------|-------------|----------------------------------------------------|
 | **@builderbot/bot**                 | ^1.2.2      | Core library for creating the WhatsApp bot.        |
-| **@builderbot/provider-baileys**    | ^1.2.2      | WhatsApp provider using Baileys library.           |
-| **axios**                           | ^1.5.0      | HTTP client for making requests to Chatwoot.       |
+| **@builderbot/provider-meta**       | ^1.2.2      | WhatsApp provider using Baileys library.           |
 | **dotenv**                          | ^16.0.0     | Loads environment variables from `.env` file.      |
-| **express**                         | ^4.21.2     | Lightweight HTTP server for webhook integration.   |
 | **typescript**                      | ^5.3.0      | TypeScript support for the project.                |
 
 

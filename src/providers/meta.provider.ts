@@ -1,6 +1,6 @@
 import { MetaProvider as Provider } from "@builderbot/provider-meta";
 import { createProvider } from "@builderbot/bot";
-import { config } from "~/config";
+import { config } from "../config";
 
 
 export const provider = createProvider(Provider, {

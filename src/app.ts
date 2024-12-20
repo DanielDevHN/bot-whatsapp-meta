@@ -1,5 +1,5 @@
 import "dotenv/config";
-import { createBot, createFlow, MemoryDB } from '@builderbot/bot'
+import { addKeyword, createBot, createFlow, MemoryDB } from '@builderbot/bot'
 import { provider } from './providers/meta.provider'
 import {adapterDB, connectToMongoDB } from "./database/mongo.db";
 import { loadDynamicFlow } from "./flows/dynamic.flow";
@@ -12,8 +12,9 @@ const main = async () => {
     try {
         const db = await connectToMongoDB();
 
+        // const testFlow =  addKeyword(['hola']).addAnswer('Hola, soy un bot dinámico');
         const dynamicFlowArray = await loadDynamicFlow(db);
-        console.log("🚀 Flujos dinámicos listos para el bot:", dynamicFlowArray.map(flow => flow.toJson()));
+        //console.log("🚀 Flujos dinámicos listos para el bot:", dynamicFlowArray.map(flow => flow.toJson()));
 
         const dynamicFlows = createFlow(dynamicFlowArray);
         

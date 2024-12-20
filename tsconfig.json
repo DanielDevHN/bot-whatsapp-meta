@@ -1,28 +1,22 @@
 {
   "compilerOptions": {
-    "target": "ES2022",
-    "module": "ES2022",
+    "target": "es2016",
+    "module": "commonjs",
     "declaration": false,
     "declarationMap": false,
-    "moduleResolution": "node",
-    "removeComments": true,
+    //    "moduleResolution": "node",
+    "removeComments": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
-    "sourceMap": false,
+    "sourceMap": true,
     "outDir": "./dist",
-    "baseUrl": "./",
-    "rootDir": "./",
+    "rootDir": "./src",
     "incremental": true,
     "skipLibCheck": true,
-    "paths": {
-      "~/*": ["./src/*"]
-    }
+    "esModuleInterop": true,
   },
-  "include": [
-    "**/*.js",
-    "**/*.ts"
-  ],
   "exclude": [
     "node_modules",
     "dist",

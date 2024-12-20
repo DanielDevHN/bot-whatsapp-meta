@@ -1,0 +1,36 @@
+[
+  {
+    "trigger_words": ["hola", "hello", "buenos días"],
+    "responses": [
+      {
+        "type": "text",
+        "content": "¡Hola! ¿En qué puedo ayudarte?"
+      },
+      {
+        "type": "list",
+        "content": {
+          "header": "Opciones Disponibles",
+          "body": "Selecciona una opción:",
+          "button": "Ver opciones",
+          "sections": [
+            {
+              "title": "Redes Sociales",
+              "rows": [
+                {
+                  "id": "open_youtube",
+                  "title": "Abrir YouTube",
+                  "description": "Visita YouTube ahora"
+                },
+                {
+                  "id": "open_facebook",
+                  "title": "Abrir Facebook",
+                  "description": "Visita Facebook ahora"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

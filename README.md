@@ -34,7 +34,7 @@ Make sure you have the following installed:
 Follow these steps to set up the project:
 
 1. **Clone the repository**:
-   ```https://github.com/DanielDevHN/bot-whatsapp-meta.git``
+   ```https://github.com/DanielDevHN/bot-whatsapp-meta.git```
 
    ```base-ts-baileys-memory```
 
@@ -75,7 +75,7 @@ The following libraries and tools are used in this project:
 | **Package**                         | **Version** | **Description**                                     |
 |-------------------------------------|-------------|----------------------------------------------------|
 | **@builderbot/bot**                 | ^1.2.2      | Core library for creating the WhatsApp bot.        |
-| **@builderbot/provider-meta**       | ^1.2.2      | WhatsApp provider using Baileys library.           |
+| **@builderbot/provider-meta**       | ^1.2.2      | WhatsApp provider using Meta library.              |
 | **dotenv**                          | ^16.0.0     | Loads environment variables from `.env` file.      |
 | **typescript**                      | ^5.3.0      | TypeScript support for the project.                |
 

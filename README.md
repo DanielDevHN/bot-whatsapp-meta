@@ -36,7 +36,7 @@ Follow these steps to set up the project:
 1. **Clone the repository**:
    ```https://github.com/DanielDevHN/bot-whatsapp-meta.git```
 
-   ```base-ts-baileys-memory```
+   ```chatbot-ts-meta-memory```
 
 2. **Install project dependencies**:
    ```npm install```

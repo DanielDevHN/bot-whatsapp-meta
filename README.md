@@ -50,7 +50,12 @@ Create a ```.env``` file in the root directory and add the following environment
 
 ```MUMBER_ID=number_id```
 
-```VERIFY_TOKEN=your-custom-token```               
+```VERIFY_TOKEN=your-custom-token```
+
+```MONGODB_URI=your_mongodb_uri```
+
+```MONGODB_NAME=your_database_name```
+
 
 ## BuilderBot Configuration
 ```PORT=you_port```                                      

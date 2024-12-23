@@ -9,7 +9,3 @@ export const provider = createProvider(Provider, {
     verifyToken: config.verifyToken,
     version: 'v21.0'
 })
-
-provider.on("message", (payload) => {
-    console.log("📥 Mensaje recibido:", payload);
-});

@@ -17,10 +17,8 @@ export const loadDynamicFlow = async (db: Db) => {
   
     flow.responses.forEach((response, responseIndex) => {
       if (response.type === "text") {
-        console.log(`📝 Respuesta de texto [${responseIndex}]:`, response.content);
         flowBuilder = flowBuilder.addAnswer(response.content);
       } else if (response.type === "list") {
-        console.log(`📋 Respuesta de lista [${responseIndex}]:`, response.content);
   
         // Construir lista dinámicamente
         const list = {
@@ -41,7 +39,7 @@ export const loadDynamicFlow = async (db: Db) => {
               rows: section.rows.map((row: any) => ({
                 id: row.id,
                 title: row.title,
-                description: row.description,
+                //description: row.description,
               })),
             })),
           },
@@ -52,7 +50,6 @@ export const loadDynamicFlow = async (db: Db) => {
           response.content.body,
           null,
           async (ctx, { provider }) => {
-            console.log(`📤 Enviando lista al usuario:`, list);
             await provider.sendList(ctx.from, list);
           }
         );
@@ -72,10 +69,9 @@ export const loadDynamicFlow = async (db: Db) => {
   
             if (matchedRow) {
               await flowDynamic(`Seleccionaste: ${matchedRow.title}`);
-              console.log(`✅ Acción ejecutada para: ${matchedRow.title}`);
+              await flowDynamic(matchedRow.description);
             } else {
               await flowDynamic("No seleccionaste una opción válida. Inténtalo nuevamente.");
-              console.log("⚠️ Opción inválida seleccionada.");
             }
           }
         );
